@@ -1,0 +1,207 @@
+Swift Cont.
+
+Enumerations
+	enum Direction {
+		case up
+		case left
+		case down
+		case right
+	}
+
+	var playerDirection = Direction.right
+	playerDirection = .up // type inference
+
+	func turnLeft (direction: Direction) -> Direction {
+		var newDirection: Direction
+		switch direction {
+			case .up.   : newDirection = .left
+			case .left  : newDirection = .down
+			case .down  : newDirection = .right
+			case .right : newDirection = .up
+		}
+		return newDirection
+	}
+
+	func facingLeftOrRight (direction: Direction) -> Bool {
+		switch direction {
+			case .left, .right : return true
+			default: return false
+		}
+	}
+
+	Raw Values
+
+		enum Direction: Int {
+			case up = 0, left, down, right 		// Now they are Ints
+		}
+		Direction.left.rawValue   				// Equals 1
+
+		enum Diretion: String {
+			case up, left, down, right  		// Now they are Strings
+		}
+		Direction.left.rawValue 				// Equals "left"
+
+
+Classes
+
+	class Player {
+		var direction: Direction
+		var speed: Float
+		var inventory: [String]?   // initialized to nil
+
+		init (speed: Float, direction: Direction) {
+			self.speed = speed
+			self.direction = direction
+		}
+
+		func energize() {
+			speed += 1.0
+		}
+	}
+
+	var player = Player(speed: 1.0, direction: .right)
+
+	class FlyingPlayer : Player {
+		var altitude: Float
+
+		init (speed: Float, direction: Direction, altitude: Float) {
+			self.altitude = altitude
+			super.init (speed: speed, direction: direction)
+		}
+
+		override func energize() {
+			super.energize()
+			altitude += 1.0
+		}
+	}
+
+	var flyingPlayer = FlyingPlayer(speed: 1.0, direction: .right, altitude: 1.0)
+
+
+Class vs. Struct
+
+	Classes passed by reference
+	Structs passed by value
+
+Optional Chaining
+
+	var myPlayer = Player(speed: 1.0, direction: .right)
+
+	let firstItem = myPlayer.inventory.first  	// error
+	let firstItem = myPlayer.inventory!.first 	// error
+	let firstItem = myPlayer.inventory?.first 	// nil (OC)
+	myPlayer.inventory?.append("potion")	  	// nil (OC: no effect)
+	type(of: firstItem)							// Optional<String>
+
+	if let item = myPlayer.inventory?.first {
+		print("item = \(item)")				  	// nothing printed (OC)
+	}
+
+	myPlayer.inventory = []						// array initialized
+	myPlayer.inventory?.append("potion")		// "potion" added
+	let item = myPlayer.inventory?.firstItem	// "potion"
+
+	if let item = myPlayer.inventory?.first {
+		print("item = \(item)")					// "item = potion"
+	}
+
+Error Handling
+
+	do-try-throw-catch error handling
+
+	enum myError : Error {
+		case good
+		case bad
+		case fatal
+	}
+
+	func throwsError () throws {
+		throw myError.fatal
+	}
+
+	func testError () {
+		do {
+			try throwsError()
+			print ("no error")
+		} catch myError.fatal {
+			print("fatal")
+		} catch {
+			print("good or bad")
+		}
+	}
+
+Type Casting
+
+	Regular type Casting
+
+		let x = 10				
+		let xstr = String(x)	// "10"
+		let xstr2 = "\(x)"		// "10"
+		let ystr = "100"
+		let y = Int(ys)			// 100
+		var arrayOfAnything: [Any]
+		var arrayOfAnyClassInstances: [AnyObject]
+
+	Downcasting (as?, as!)
+
+		var playerArray = [Player]()
+		playerArray.append(flyingPlayer)
+		playerArray.append(player)
+		var fp : FlyingPlayer!	
+		fp = pa[0] as? FlyingPlayer 	// fp = flyingPlayer
+		fp = pa[1] as? FlyingPlayer  	// fp = nil	
+		fp = pa[1] as! FlyingPlayer 	// error
+
+Protocols
+
+	Required properties and methods
+	Adopted by class, struct, or enum type
+	Said to "conform" to a protocol 
+
+	protocol MyFunProtocol {
+		func isFun() -> Bool
+	}
+
+	class MyFunClass : MyFunProtocol {
+		func isFun() -> Bool {
+			return true
+		}
+	}
+
+Delegation
+
+	Use protocols so class can delegate to others
+
+	protocol MyFunDelegate {
+		func isFun() -> Bool
+	}
+
+	class MyFunDelegateClass: MyFunDelegate {
+		func isFun() -> Bool {
+			return true
+		}
+	}
+
+	class MyFunClass {
+		var delegate: MyFunDelegate?
+
+		func fun() -> Bool {
+			return delegate!.isFun() 
+		}
+	}
+
+	var myFunClass = MyFunClass()
+	var myFunClassDelegate = MyFunDelegateClass()
+	myFunClass.delegate = myFunClassDelegate
+	myFunClass.fun()				// returns true
+
+
+
+
+
+
+
+
+
+
+

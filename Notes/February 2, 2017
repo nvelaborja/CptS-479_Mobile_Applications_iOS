@@ -1,0 +1,31 @@
+// First view controller
+
+class FirstVC : UIViewController {
+	var myInt1 = 1
+
+	override func viewDidAppear(_ animated: Bool) {
+		print("1st: myInt1 = \(myInt1.x)")
+	}
+
+	override func prepare(for seque: UIStoryboardSegue, sender: Any?) {
+		if (segue.identifier == "fromOnetoTwo") {
+			let vc = segue.destination as! SecondVC
+			vc.myInt2 = myInt1
+		}
+	}
+}
+
+// Second view controller
+
+class SecondVC : UIViewController {
+	var myInt2: Int!
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+		print("2nd: myInt2 = \(myInt2)")
+		myInt2 = 2
+	}
+
+
+}

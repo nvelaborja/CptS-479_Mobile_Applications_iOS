@@ -1,0 +1,88 @@
+UI Design and Storyboarding
+
+	Multi-Threading
+		RUnning multiple tasks concurrently
+		Tasks assigned to threads
+		Threads assigned to processor cores
+
+		Refered to as "Concurrency"
+			Manipulate "queues", not threads
+
+			let myQueue = DispatchQueue.global()
+			myQueue.async {
+				// Do something, not affecting UI
+			}
+
+		Grand Central Dispatch (DCD)
+			iOS mechanism for sending tasks to different queues
+			You can create your own queues, and assign tasks to them
+			Threads take tasks from queues and run on a core
+
+		Main queue used for UI and user interaction
+			Don't put intensive tasks on Main queue!
+
+			DispatchQueue.main.async {
+				// Do something easy
+				// Or affecting UI
+			}
+
+		Also, UI changes not on Main queue "lost"
+
+	Timers
+
+		Timer class
+			Wait specified time interval, then call function
+			Can repeat
+
+		Start immediately
+			scheduledTimer(withTimeInterval interval: TimerInterval, repeats: Bool, block: @escaping (Timer) -> Void) -> Timer
+
+		Stop 
+			Timer.invalidate()
+
+		Create
+			init(timeInterval interval: TimeInterval, repeats: Bool, block: @escaping (Timer) -> Void) -> Timer
+
+		Create to fire later
+			init(fire: Date, timeInterval interval: TimerInterval, repeats: Bool, block: @escaping (Timer) -> Void) -> Timer
+
+		Add to run loop
+			let runLoop = RunLoop.current
+			runLoop.add(timer, forMode: .defaultRunLoopMode)
+
+		Example
+
+			var timer1: Timer!
+			var timer2: Timer.init(timeInterval: 1.0, repeats: false, block: handleTick)
+
+			func startButtonTapped {
+				timer1 = Timer.scheduledTimer (withTimeInterval: 1.0, repeats: true, block: handleTick)
+				RunLoop.current.add(timer2, forMode: .defaultRunLoopMode)
+			}
+
+			func stopButtonTapped {
+				timer1.invalidate()
+				timer2.invalidate()
+			}
+
+			func handleTick (timer: Timer) {
+				print("tick")
+			}
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

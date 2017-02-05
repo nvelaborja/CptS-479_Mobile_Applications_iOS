@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Commenter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commenter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FM-9p-mfM">
+                                <rect key="frame" x="142" y="36" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr5-ds-VoT">
+                                <rect key="frame" x="41" y="89" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLC-Et-vyA">
+                                <rect key="frame" x="129" y="85" width="205" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hde-1Z-ASQ">
+                                <rect key="frame" x="172" y="157" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="ButtonAddTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LkI-Ia-KTx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjG-V1-vnr">
+                                <rect key="frame" x="160" y="215" width="54" height="30"/>
+                                <state key="normal" title="Print All"/>
+                                <connections>
+                                    <action selector="ButtonPrintAllTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C2s-up-M7e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vjG-V1-vnr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2yd-MF-kVl"/>
+                            <constraint firstItem="vjG-V1-vnr" firstAttribute="top" secondItem="hde-1Z-ASQ" secondAttribute="bottom" constant="28" id="6Aa-sn-itp"/>
+                            <constraint firstItem="hde-1Z-ASQ" firstAttribute="top" secondItem="HLC-Et-vyA" secondAttribute="bottom" constant="42" id="Ccd-dp-bs1"/>
+                            <constraint firstItem="HLC-Et-vyA" firstAttribute="centerY" secondItem="zr5-ds-VoT" secondAttribute="centerY" id="GLp-e2-IT1"/>
+                            <constraint firstItem="HLC-Et-vyA" firstAttribute="top" secondItem="3FM-9p-mfM" secondAttribute="bottom" constant="28" id="HBi-zR-Mnk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HLC-Et-vyA" secondAttribute="trailing" constant="25" id="Lyv-Jc-l2m"/>
+                            <constraint firstItem="zr5-ds-VoT" firstAttribute="top" secondItem="3FM-9p-mfM" secondAttribute="bottom" constant="32" id="NWd-Ef-JOY"/>
+                            <constraint firstItem="3FM-9p-mfM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V9b-IN-6GY"/>
+                            <constraint firstItem="zr5-ds-VoT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="dYR-VR-eIz"/>
+                            <constraint firstItem="hde-1Z-ASQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iTd-7r-ZeD"/>
+                            <constraint firstItem="HLC-Et-vyA" firstAttribute="leading" secondItem="zr5-ds-VoT" secondAttribute="trailing" constant="8" id="oU2-Sj-piV"/>
+                            <constraint firstItem="3FM-9p-mfM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="ovO-8v-uSY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Button_Add" destination="hde-1Z-ASQ" id="pKl-sb-rZr"/>
+                        <outlet property="commentTextField" destination="HLC-Et-vyA" id="XMw-o0-ZEI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
