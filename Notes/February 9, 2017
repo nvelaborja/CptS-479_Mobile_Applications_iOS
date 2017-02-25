@@ -1,0 +1,30 @@
+Navigation
+	Create views for Details and Add new entries
+
+
+Insertion
+	In AddViewController.swift
+		Maintain Bool indication new entry ready
+		Save button sets Bool=true and performs unwind segue
+
+		var newCharacterReady: Bool = false
+
+		@IBAction func saveButton(_ sender: UIBarButtonItem) {
+			
+			newCharacterRead = true
+			performSegue(withIdentifier: "unwindFromDetail", sender: nil)
+		}
+
+Delegate and Data Source
+	Automatic for Table View Controller
+	But can setup programmatically for Table sub-view
+	
+		class ViewController: UIViewController, UITableViewController, UITableViewDataSource {
+			@IBOutlet weak car bowserTableView: UITableView!
+
+			override func viewDidLoad() {
+				super.viewDidLoad()
+				bowserTableView.delegate = self
+				bowserTableView.dataSource = self
+			}
+		}

@@ -7,31 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D802F0A71E284424004EE8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802F0A61E284424004EE8C5 /* AppDelegate.swift */; };
-		D802F0A91E284424004EE8C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802F0A81E284424004EE8C5 /* ViewController.swift */; };
-		D802F0AC1E284424004EE8C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D802F0AA1E284424004EE8C5 /* Main.storyboard */; };
-		D802F0AE1E284424004EE8C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D802F0AD1E284424004EE8C5 /* Assets.xcassets */; };
-		D802F0B11E284424004EE8C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D802F0AF1E284424004EE8C5 /* LaunchScreen.storyboard */; };
-		D8934A2D1E49274900C93E90 /* AddJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8934A2C1E49274900C93E90 /* AddJokeViewController.swift */; };
-		D8A136D81E36B35D005E6D2C /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A136D71E36B35D005E6D2C /* Joke.swift */; };
-		D8E5DDE61E52636B0064420D /* JokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5DDE51E52636B0064420D /* JokeTableViewController.swift */; };
+		D817103A1E5BC0AE0042C5FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81710391E5BC0AE0042C5FC /* AppDelegate.swift */; };
+		D817103C1E5BC0AE0042C5FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817103B1E5BC0AE0042C5FC /* ViewController.swift */; };
+		D817103F1E5BC0AE0042C5FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D817103D1E5BC0AE0042C5FC /* Main.storyboard */; };
+		D81710411E5BC0AE0042C5FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81710401E5BC0AE0042C5FC /* Assets.xcassets */; };
+		D81710441E5BC0AE0042C5FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81710421E5BC0AE0042C5FC /* LaunchScreen.storyboard */; };
+		D817104C1E5BC1AE0042C5FC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D817104B1E5BC1AE0042C5FC /* Settings.bundle */; };
+		D817104E1E5BCA2D0042C5FC /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817104D1E5BCA2D0042C5FC /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D802F0A31E284424004EE8C5 /* Joker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D802F0A61E284424004EE8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D802F0A81E284424004EE8C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D802F0AB1E284424004EE8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D802F0AD1E284424004EE8C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D802F0B01E284424004EE8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D802F0B21E284424004EE8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8934A2C1E49274900C93E90 /* AddJokeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJokeViewController.swift; sourceTree = "<group>"; };
-		D8A136D71E36B35D005E6D2C /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
-		D8E5DDE51E52636B0064420D /* JokeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeTableViewController.swift; sourceTree = "<group>"; };
+		D81710361E5BC0AE0042C5FC /* JokeSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81710391E5BC0AE0042C5FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D817103B1E5BC0AE0042C5FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D817103E1E5BC0AE0042C5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D81710401E5BC0AE0042C5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D81710431E5BC0AE0042C5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D81710451E5BC0AE0042C5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D817104B1E5BC1AE0042C5FC /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D817104D1E5BCA2D0042C5FC /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D802F0A01E284424004EE8C5 /* Frameworks */ = {
+		D81710331E5BC0AE0042C5FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,76 +39,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D802F09A1E284424004EE8C5 = {
+		D817102D1E5BC0AE0042C5FC = {
 			isa = PBXGroup;
 			children = (
-				D802F0A51E284424004EE8C5 /* Joker */,
-				D802F0A41E284424004EE8C5 /* Products */,
+				D817104B1E5BC1AE0042C5FC /* Settings.bundle */,
+				D81710381E5BC0AE0042C5FC /* JokeSettings */,
+				D81710371E5BC0AE0042C5FC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D802F0A41E284424004EE8C5 /* Products */ = {
+		D81710371E5BC0AE0042C5FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D802F0A31E284424004EE8C5 /* Joker.app */,
+				D81710361E5BC0AE0042C5FC /* JokeSettings.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D802F0A51E284424004EE8C5 /* Joker */ = {
+		D81710381E5BC0AE0042C5FC /* JokeSettings */ = {
 			isa = PBXGroup;
 			children = (
-				D802F0A61E284424004EE8C5 /* AppDelegate.swift */,
-				D802F0A81E284424004EE8C5 /* ViewController.swift */,
-				D802F0AA1E284424004EE8C5 /* Main.storyboard */,
-				D802F0AD1E284424004EE8C5 /* Assets.xcassets */,
-				D802F0AF1E284424004EE8C5 /* LaunchScreen.storyboard */,
-				D802F0B21E284424004EE8C5 /* Info.plist */,
-				D8A136D71E36B35D005E6D2C /* Joke.swift */,
-				D8934A2C1E49274900C93E90 /* AddJokeViewController.swift */,
-				D8E5DDE51E52636B0064420D /* JokeTableViewController.swift */,
+				D81710391E5BC0AE0042C5FC /* AppDelegate.swift */,
+				D817103B1E5BC0AE0042C5FC /* ViewController.swift */,
+				D817103D1E5BC0AE0042C5FC /* Main.storyboard */,
+				D81710401E5BC0AE0042C5FC /* Assets.xcassets */,
+				D81710421E5BC0AE0042C5FC /* LaunchScreen.storyboard */,
+				D81710451E5BC0AE0042C5FC /* Info.plist */,
+				D817104D1E5BCA2D0042C5FC /* SettingsTableViewController.swift */,
 			);
-			path = Joker;
+			path = JokeSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D802F0A21E284424004EE8C5 /* Joker */ = {
+		D81710351E5BC0AE0042C5FC /* JokeSettings */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D802F0B51E284424004EE8C5 /* Build configuration list for PBXNativeTarget "Joker" */;
+			buildConfigurationList = D81710481E5BC0AE0042C5FC /* Build configuration list for PBXNativeTarget "JokeSettings" */;
 			buildPhases = (
-				D802F09F1E284424004EE8C5 /* Sources */,
-				D802F0A01E284424004EE8C5 /* Frameworks */,
-				D802F0A11E284424004EE8C5 /* Resources */,
+				D81710321E5BC0AE0042C5FC /* Sources */,
+				D81710331E5BC0AE0042C5FC /* Frameworks */,
+				D81710341E5BC0AE0042C5FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Joker;
-			productName = Joker;
-			productReference = D802F0A31E284424004EE8C5 /* Joker.app */;
+			name = JokeSettings;
+			productName = JokeSettings;
+			productReference = D81710361E5BC0AE0042C5FC /* JokeSettings.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D802F09B1E284424004EE8C5 /* Project object */ = {
+		D817102E1E5BC0AE0042C5FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Nathan VelaBorja";
 				TargetAttributes = {
-					D802F0A21E284424004EE8C5 = {
+					D81710351E5BC0AE0042C5FC = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6BW2KG66N2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = D802F09E1E284424004EE8C5 /* Build configuration list for PBXProject "Joker" */;
+			buildConfigurationList = D81710311E5BC0AE0042C5FC /* Build configuration list for PBXProject "JokeSettings" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -118,57 +115,56 @@
 				en,
 				Base,
 			);
-			mainGroup = D802F09A1E284424004EE8C5;
-			productRefGroup = D802F0A41E284424004EE8C5 /* Products */;
+			mainGroup = D817102D1E5BC0AE0042C5FC;
+			productRefGroup = D81710371E5BC0AE0042C5FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D802F0A21E284424004EE8C5 /* Joker */,
+				D81710351E5BC0AE0042C5FC /* JokeSettings */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D802F0A11E284424004EE8C5 /* Resources */ = {
+		D81710341E5BC0AE0042C5FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D802F0B11E284424004EE8C5 /* LaunchScreen.storyboard in Resources */,
-				D802F0AE1E284424004EE8C5 /* Assets.xcassets in Resources */,
-				D802F0AC1E284424004EE8C5 /* Main.storyboard in Resources */,
+				D817104C1E5BC1AE0042C5FC /* Settings.bundle in Resources */,
+				D81710441E5BC0AE0042C5FC /* LaunchScreen.storyboard in Resources */,
+				D81710411E5BC0AE0042C5FC /* Assets.xcassets in Resources */,
+				D817103F1E5BC0AE0042C5FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D802F09F1E284424004EE8C5 /* Sources */ = {
+		D81710321E5BC0AE0042C5FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D802F0A91E284424004EE8C5 /* ViewController.swift in Sources */,
-				D802F0A71E284424004EE8C5 /* AppDelegate.swift in Sources */,
-				D8A136D81E36B35D005E6D2C /* Joke.swift in Sources */,
-				D8E5DDE61E52636B0064420D /* JokeTableViewController.swift in Sources */,
-				D8934A2D1E49274900C93E90 /* AddJokeViewController.swift in Sources */,
+				D817103C1E5BC0AE0042C5FC /* ViewController.swift in Sources */,
+				D817103A1E5BC0AE0042C5FC /* AppDelegate.swift in Sources */,
+				D817104E1E5BCA2D0042C5FC /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D802F0AA1E284424004EE8C5 /* Main.storyboard */ = {
+		D817103D1E5BC0AE0042C5FC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D802F0AB1E284424004EE8C5 /* Base */,
+				D817103E1E5BC0AE0042C5FC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D802F0AF1E284424004EE8C5 /* LaunchScreen.storyboard */ = {
+		D81710421E5BC0AE0042C5FC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D802F0B01E284424004EE8C5 /* Base */,
+				D81710431E5BC0AE0042C5FC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -176,7 +172,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D802F0B31E284424004EE8C5 /* Debug */ = {
+		D81710461E5BC0AE0042C5FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		D802F0B41E284424004EE8C5 /* Release */ = {
+		D81710471E5BC0AE0042C5FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,27 +265,27 @@
 			};
 			name = Release;
 		};
-		D802F0B61E284424004EE8C5 /* Debug */ = {
+		D81710491E5BC0AE0042C5FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BW2KG66N2;
-				INFOPLIST_FILE = Joker/Info.plist;
+				INFOPLIST_FILE = JokeSettings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = VelaBorja.Joker;
+				PRODUCT_BUNDLE_IDENTIFIER = VelaBorja.JokeSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		D802F0B71E284424004EE8C5 /* Release */ = {
+		D817104A1E5BC0AE0042C5FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BW2KG66N2;
-				INFOPLIST_FILE = Joker/Info.plist;
+				INFOPLIST_FILE = JokeSettings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = VelaBorja.Joker;
+				PRODUCT_BUNDLE_IDENTIFIER = VelaBorja.JokeSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -298,25 +294,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D802F09E1E284424004EE8C5 /* Build configuration list for PBXProject "Joker" */ = {
+		D81710311E5BC0AE0042C5FC /* Build configuration list for PBXProject "JokeSettings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D802F0B31E284424004EE8C5 /* Debug */,
-				D802F0B41E284424004EE8C5 /* Release */,
+				D81710461E5BC0AE0042C5FC /* Debug */,
+				D81710471E5BC0AE0042C5FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D802F0B51E284424004EE8C5 /* Build configuration list for PBXNativeTarget "Joker" */ = {
+		D81710481E5BC0AE0042C5FC /* Build configuration list for PBXNativeTarget "JokeSettings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D802F0B61E284424004EE8C5 /* Debug */,
-				D802F0B71E284424004EE8C5 /* Release */,
+				D81710491E5BC0AE0042C5FC /* Debug */,
+				D817104A1E5BC0AE0042C5FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D802F09B1E284424004EE8C5 /* Project object */;
+	rootObject = D817102E1E5BC0AE0042C5FC /* Project object */;
 }

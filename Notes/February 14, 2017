@@ -1,0 +1,28 @@
+Settings
+
+	In-app settings on device
+		UserDefaults (Global variable)
+
+	Global settings on device
+		Settings Bundle
+
+	Settings across devices
+		iCloud key-value store
+
+User Defaults
+	Persistent key-value store for app
+
+	Accessing user defaults
+
+		if (UserDefaults.standard.object(forKey: "volume") != nil) {
+			self.volume = UserDefaults.standard.integer(forKey: "volume")
+		} else {
+			self.volume = 10
+		}
+
+	Setting user defaults
+
+		let volume = 15
+		UserDefaults.standard.set(volume, forKey: "volume")
+
+	

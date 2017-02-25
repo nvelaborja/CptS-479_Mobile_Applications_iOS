@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelLine3: UILabel!
     @IBOutlet weak var answerOutlet: UILabel!
     @IBOutlet weak var answerButtonOutlet: UIButton!
-    var jokes : [Joke] = []
+    var jokes : JokeArray = JokeArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,21 +30,31 @@ class ViewController: UIViewController {
     }
 
     @IBAction func answerTapped(_ sender: UIButton) {
-        answerOutlet.isHidden = !answerOutlet.isHidden
-        
-        if (!answerOutlet.isHidden){
-            answerButtonOutlet.setTitle("New Joke", for: .normal)
+        if (answerOutlet.isHidden){
+            answerButtonOutlet.setTitle("New Joke", for: UIControlState.normal)
         }
         else {
+            answerButtonOutlet.setTitle("Show Answer", for: UIControlState.normal)
             chooseJoke()
-            answerButtonOutlet.setTitle("Show Answer", for: .normal)
         }
+        
+        answerOutlet.isHidden = !answerOutlet.isHidden
     }
     
     // Randomly selects a joke from jokes array and set's app titles / answer to corresponding lines
     func chooseJoke() {
-        let randomJokeIndex = Int(arc4random_uniform(UInt32(self.jokes.count)))
-        let joke = jokes[randomJokeIndex]
+        
+        if (jokes.jokes.count == 0){
+            self.labelLine1.text = "No jokes!"
+            self.labelLine2.text = ""
+            self.labelLine3.text = ""
+            self.answerOutlet.text = "No answers!"
+            
+            return
+        }
+        
+        let randomJokeIndex = Int(arc4random_uniform(UInt32(self.jokes.jokes.count)))
+        let joke = jokes.jokes[randomJokeIndex]
         
         self.labelLine1.text = joke.firstLine
         self.labelLine2.text = joke.secondLine
@@ -64,7 +74,18 @@ class ViewController: UIViewController {
     // Creates joke given joke parameters and adds joke to joke array
     func addJoke(_ first: String = "", _ second: String = "", _ third: String = "", _ answer: String = "") {
         let joke = Joke(first, second, third, answer)
-        self.jokes.append(joke)
+        self.jokes.jokes.append(joke)
+    }
+    
+    @IBAction func AddJokeButtonDidTouchUpInside(_ sender: UIButton) {
+        performSegue(withIdentifier: "AddJokeSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "ViewJokesSegue") {
+            let jokeTableViewController = segue.destination as! JokeTableViewController
+            jokeTableViewController.jokes = self.jokes
+        }
     }
 }
 

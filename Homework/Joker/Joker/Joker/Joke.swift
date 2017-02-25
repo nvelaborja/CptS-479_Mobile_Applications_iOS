@@ -20,6 +20,15 @@ class Joke {
         thirdLine = third;
         answerLine = answer;
     }
+    
+}
+
+class JokeArray {
+    var jokes: [Joke]
+    
+    init(_ Jokes: [Joke] = []) {
+        jokes = Jokes
+    }
 }
 
 /*
