@@ -13,6 +13,7 @@ class Joke {
     var secondLine: String
     var thirdLine: String
     var answerLine: String
+    var rating : Int = 0
     
     init(_ first: String = "", _ second: String = "", _ third: String = "", _ answer: String = "") {
         firstLine = first;

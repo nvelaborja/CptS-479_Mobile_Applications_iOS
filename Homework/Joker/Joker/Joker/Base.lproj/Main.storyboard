@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Joke-->
+        <!--Joke #-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Joker" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,19 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4x-e2-0i7">
-                                <rect key="frame" x="66" y="109" width="243" height="23.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Yo, this is Nathan. Here's a joke!">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="Avenir-Book"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0V-SY-lce">
-                                <rect key="frame" x="103.5" y="180.5" width="168.5" height="23.5"/>
+                                <rect key="frame" x="103" y="139" width="168.5" height="23.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="What is red and tastes">
                                         <attributes>
@@ -45,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWn-OS-Vs0">
-                                <rect key="frame" x="126" y="212" width="122" height="23.5"/>
+                                <rect key="frame" x="126" y="170.5" width="122" height="23.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="like blue candy?">
                                         <attributes>
@@ -56,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coZ-eR-FAQ">
-                                <rect key="frame" x="146" y="346" width="83" height="23.5"/>
+                                <rect key="frame" x="146" y="291.5" width="83" height="23.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Red candy.">
                                         <attributes>
@@ -67,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUU-8t-4kD">
-                                <rect key="frame" x="166" y="243.5" width="42" height="23.5"/>
+                                <rect key="frame" x="166" y="202" width="42" height="23.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
@@ -78,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqF-ia-B45">
-                                <rect key="frame" x="142.5" y="305" width="90" height="33"/>
+                                <rect key="frame" x="142.5" y="250.5" width="90" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <state key="normal" title="Show Answer"/>
                                 <connections>
@@ -92,40 +81,99 @@
                                     <segue destination="0Yz-6R-zDv" kind="show" identifier="ViewJokesSegue" id="6dj-4V-ZtA"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star_Hollow" translatesAutoresizingMaskIntoConstraints="NO" id="1nK-6R-b5J">
+                                <rect key="frame" x="171" y="323" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="0e2-4N-GpU"/>
+                                    <constraint firstAttribute="width" constant="32" id="hou-Iu-JJ9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star_Hollow" translatesAutoresizingMaskIntoConstraints="NO" id="a15-sA-XFE">
+                                <rect key="frame" x="211" y="323" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="KKx-MP-HiP"/>
+                                    <constraint firstAttribute="width" constant="32" id="Zvy-Jg-iV0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star_Hollow" translatesAutoresizingMaskIntoConstraints="NO" id="e4T-Ii-xv5">
+                                <rect key="frame" x="251" y="323" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="pnU-wk-YCg"/>
+                                    <constraint firstAttribute="height" constant="32" id="uR1-4v-2wu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star_Hollow" translatesAutoresizingMaskIntoConstraints="NO" id="818-8F-29K">
+                                <rect key="frame" x="131" y="323" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="PQp-ML-Ue2"/>
+                                    <constraint firstAttribute="width" constant="32" id="nS4-jX-jKU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star_Hollow" translatesAutoresizingMaskIntoConstraints="NO" id="by4-Ur-hDP">
+                                <rect key="frame" x="91" y="323" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="HCG-vB-tGN"/>
+                                    <constraint firstAttribute="height" constant="32" id="b76-JL-mQo"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="iUU-8t-4kD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7EQ-UW-dXu"/>
-                            <constraint firstItem="FWn-OS-Vs0" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="CrA-t6-XhP"/>
+                            <constraint firstItem="a15-sA-XFE" firstAttribute="leading" secondItem="1nK-6R-b5J" secondAttribute="trailing" constant="8" id="ALA-pT-Dar"/>
                             <constraint firstItem="FWn-OS-Vs0" firstAttribute="top" secondItem="L0V-SY-lce" secondAttribute="bottom" constant="8" id="EbZ-rz-MtE"/>
                             <constraint firstItem="iUU-8t-4kD" firstAttribute="top" secondItem="FWn-OS-Vs0" secondAttribute="bottom" constant="8" id="Hu3-BN-VON"/>
                             <constraint firstItem="L0V-SY-lce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J98-eK-nZq"/>
-                            <constraint firstItem="L0V-SY-lce" firstAttribute="top" secondItem="d4x-e2-0i7" secondAttribute="bottom" constant="48" id="JLo-bc-1OM"/>
-                            <constraint firstItem="L0V-SY-lce" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="Jpl-9s-ejS"/>
-                            <constraint firstItem="d4x-e2-0i7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Lgh-fG-fM0"/>
-                            <constraint firstItem="coZ-eR-FAQ" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="MzC-n9-DpY"/>
-                            <constraint firstItem="PqF-ia-B45" firstAttribute="top" secondItem="iUU-8t-4kD" secondAttribute="bottom" constant="38" id="QP4-CF-x4G"/>
+                            <constraint firstItem="PqF-ia-B45" firstAttribute="top" secondItem="iUU-8t-4kD" secondAttribute="bottom" constant="25" id="QP4-CF-x4G"/>
                             <constraint firstItem="coZ-eR-FAQ" firstAttribute="top" secondItem="PqF-ia-B45" secondAttribute="bottom" constant="8" id="R64-29-EF4"/>
-                            <constraint firstItem="iUU-8t-4kD" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="RUz-3p-myS"/>
-                            <constraint firstItem="PqF-ia-B45" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="WRC-0v-vhn"/>
+                            <constraint firstItem="1nK-6R-b5J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SqR-T4-c8l"/>
                             <constraint firstItem="DJD-Gb-5iq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ytm-ao-Y2M"/>
                             <constraint firstItem="PqF-ia-B45" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpi-Wo-dq9"/>
+                            <constraint firstItem="L0V-SY-lce" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="fae-qh-1LM"/>
+                            <constraint firstItem="e4T-Ii-xv5" firstAttribute="top" secondItem="coZ-eR-FAQ" secondAttribute="bottom" constant="8" id="fdH-Al-F5O"/>
+                            <constraint firstItem="818-8F-29K" firstAttribute="leading" secondItem="by4-Ur-hDP" secondAttribute="trailing" constant="8" id="fz2-c4-Eb0"/>
+                            <constraint firstItem="by4-Ur-hDP" firstAttribute="top" secondItem="coZ-eR-FAQ" secondAttribute="bottom" constant="8" id="iZ3-gd-dYb"/>
+                            <constraint firstItem="a15-sA-XFE" firstAttribute="top" secondItem="coZ-eR-FAQ" secondAttribute="bottom" constant="8" id="inv-3f-Rm9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DJD-Gb-5iq" secondAttribute="bottom" constant="20" id="isy-UU-Uol"/>
+                            <constraint firstItem="e4T-Ii-xv5" firstAttribute="leading" secondItem="a15-sA-XFE" secondAttribute="trailing" constant="8" id="kS5-UU-tI8"/>
+                            <constraint firstItem="1nK-6R-b5J" firstAttribute="leading" secondItem="818-8F-29K" secondAttribute="trailing" constant="8" id="kbl-vy-1WO"/>
+                            <constraint firstItem="1nK-6R-b5J" firstAttribute="top" secondItem="coZ-eR-FAQ" secondAttribute="bottom" constant="8" id="oC4-Nl-5Rh"/>
                             <constraint firstItem="coZ-eR-FAQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xG4-Wu-pJU"/>
-                            <constraint firstItem="d4x-e2-0i7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xSq-S8-Hpx"/>
                             <constraint firstItem="FWn-OS-Vs0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zVI-lU-eUg"/>
+                            <constraint firstItem="818-8F-29K" firstAttribute="top" secondItem="coZ-eR-FAQ" secondAttribute="bottom" constant="8" id="zqW-oe-MPe"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kin-uy-zJP" appends="YES" id="jDe-GJ-a7U"/>
+                            <outletCollection property="gestureRecognizers" destination="mxC-IF-9ej" appends="YES" id="Z2T-Vf-aHN"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Joke" prompt="VelaBorja's Joker" id="aCv-m0-5pg"/>
+                    <navigationItem key="navigationItem" title="Joke #" prompt="Joke Rater" id="aCv-m0-5pg"/>
                     <connections>
                         <outlet property="answerButtonOutlet" destination="PqF-ia-B45" id="pis-C1-bff"/>
                         <outlet property="answerOutlet" destination="coZ-eR-FAQ" id="8XD-4H-aYU"/>
                         <outlet property="labelLine1" destination="L0V-SY-lce" id="HRi-c3-yyK"/>
                         <outlet property="labelLine2" destination="FWn-OS-Vs0" id="Dz3-tg-clA"/>
                         <outlet property="labelLine3" destination="iUU-8t-4kD" id="Rgp-wJ-Bjw"/>
+                        <outlet property="navigationBar" destination="aCv-m0-5pg" id="m3k-Qg-q6o"/>
+                        <outlet property="star1" destination="by4-Ur-hDP" id="gJW-9J-nPp"/>
+                        <outlet property="star2" destination="818-8F-29K" id="AOQ-Yh-8qb"/>
+                        <outlet property="star3" destination="1nK-6R-b5J" id="0Ty-yd-6G9"/>
+                        <outlet property="star4" destination="a15-sA-XFE" id="crB-sb-bvj"/>
+                        <outlet property="star5" destination="e4T-Ii-xv5" id="YJ2-z1-bc7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="kin-uy-zJP">
+                    <connections>
+                        <action selector="swipeDetectedWithRecognizer:" destination="BYZ-38-t0r" id="ceG-BF-31y"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="mxC-IF-9ej">
+                    <connections>
+                        <action selector="swipeDetectedWithRecognizer:" destination="BYZ-38-t0r" id="asj-3D-1L5"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="972" y="38.23088455772114"/>
         </scene>
@@ -142,11 +190,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uoV-CI-7Y9" id="N3P-Qi-i2l">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WDc-94-qtb">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -339,4 +387,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Star_Hollow" width="32" height="32"/>
+    </resources>
 </document>
