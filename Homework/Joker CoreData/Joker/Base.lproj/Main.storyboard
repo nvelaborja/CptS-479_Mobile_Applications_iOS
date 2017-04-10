@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lwU-LQ-gdi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Joke-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Joker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4x-e2-0i7">
+                                <rect key="frame" x="66" y="109" width="243" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Yo, this is Nathan. Here's a joke!">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0V-SY-lce">
+                                <rect key="frame" x="103.5" y="180.5" width="168.5" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="What is red and tastes">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWn-OS-Vs0">
+                                <rect key="frame" x="126" y="212" width="122" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="like blue candy?">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coZ-eR-FAQ">
+                                <rect key="frame" x="146" y="346" width="83" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Red candy.">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUU-8t-4kD">
+                                <rect key="frame" x="166" y="243.5" width="42" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqF-ia-B45">
+                                <rect key="frame" x="142.5" y="305" width="90" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="answerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QBk-LY-fFP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJD-Gb-5iq">
+                                <rect key="frame" x="148.5" y="617" width="78" height="30"/>
+                                <state key="normal" title="View Jokes"/>
+                                <connections>
+                                    <segue destination="0Yz-6R-zDv" kind="show" identifier="ViewJokesSegue" id="6dj-4V-ZtA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iUU-8t-4kD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7EQ-UW-dXu"/>
+                            <constraint firstItem="FWn-OS-Vs0" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="CrA-t6-XhP"/>
+                            <constraint firstItem="FWn-OS-Vs0" firstAttribute="top" secondItem="L0V-SY-lce" secondAttribute="bottom" constant="8" id="EbZ-rz-MtE"/>
+                            <constraint firstItem="iUU-8t-4kD" firstAttribute="top" secondItem="FWn-OS-Vs0" secondAttribute="bottom" constant="8" id="Hu3-BN-VON"/>
+                            <constraint firstItem="L0V-SY-lce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J98-eK-nZq"/>
+                            <constraint firstItem="L0V-SY-lce" firstAttribute="top" secondItem="d4x-e2-0i7" secondAttribute="bottom" constant="48" id="JLo-bc-1OM"/>
+                            <constraint firstItem="L0V-SY-lce" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="Jpl-9s-ejS"/>
+                            <constraint firstItem="d4x-e2-0i7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Lgh-fG-fM0"/>
+                            <constraint firstItem="coZ-eR-FAQ" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="MzC-n9-DpY"/>
+                            <constraint firstItem="PqF-ia-B45" firstAttribute="top" secondItem="iUU-8t-4kD" secondAttribute="bottom" constant="38" id="QP4-CF-x4G"/>
+                            <constraint firstItem="coZ-eR-FAQ" firstAttribute="top" secondItem="PqF-ia-B45" secondAttribute="bottom" constant="8" id="R64-29-EF4"/>
+                            <constraint firstItem="iUU-8t-4kD" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="RUz-3p-myS"/>
+                            <constraint firstItem="PqF-ia-B45" firstAttribute="centerX" secondItem="d4x-e2-0i7" secondAttribute="centerX" id="WRC-0v-vhn"/>
+                            <constraint firstItem="DJD-Gb-5iq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ytm-ao-Y2M"/>
+                            <constraint firstItem="PqF-ia-B45" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpi-Wo-dq9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DJD-Gb-5iq" secondAttribute="bottom" constant="20" id="isy-UU-Uol"/>
+                            <constraint firstItem="coZ-eR-FAQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xG4-Wu-pJU"/>
+                            <constraint firstItem="d4x-e2-0i7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xSq-S8-Hpx"/>
+                            <constraint firstItem="FWn-OS-Vs0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zVI-lU-eUg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Joke" prompt="VelaBorja's Joker" id="aCv-m0-5pg"/>
+                    <connections>
+                        <outlet property="answerButtonOutlet" destination="PqF-ia-B45" id="pis-C1-bff"/>
+                        <outlet property="answerOutlet" destination="coZ-eR-FAQ" id="8XD-4H-aYU"/>
+                        <outlet property="labelLine1" destination="L0V-SY-lce" id="HRi-c3-yyK"/>
+                        <outlet property="labelLine2" destination="FWn-OS-Vs0" id="Dz3-tg-clA"/>
+                        <outlet property="labelLine3" destination="iUU-8t-4kD" id="Rgp-wJ-Bjw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="38.23088455772114"/>
+        </scene>
+        <!--Joke Table-->
+        <scene sceneID="XaA-Qp-9Re">
+            <objects>
+                <tableViewController id="0Yz-6R-zDv" customClass="JokeTableViewController" customModule="Joker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="y5q-yT-OzA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="jokeCell" textLabel="WDc-94-qtb" style="IBUITableViewCellStyleDefault" id="uoV-CI-7Y9">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uoV-CI-7Y9" id="N3P-Qi-i2l">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WDc-94-qtb">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0Yz-6R-zDv" id="bcg-js-aZd"/>
+                            <outlet property="delegate" destination="0Yz-6R-zDv" id="ZW9-3a-7A1"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Joke Table" prompt="VelaBorja's Joker" id="oJ4-RK-V9B">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nFY-rB-B95">
+                            <connections>
+                                <segue destination="5dv-8F-rZR" kind="show" identifier="addJokeSegue" id="L6m-Ta-LIk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="ZBn-w5-Grb" kind="show" identifier="editJoke" id="VNY-GX-ssh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdM-Yg-QMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="788"/>
+        </scene>
+        <!--Add Joke-->
+        <scene sceneID="EuE-rZ-JUb">
+            <objects>
+                <viewController id="5dv-8F-rZR" customClass="AddJokeViewController" customModule="Joker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tib-md-OMD"/>
+                        <viewControllerLayoutGuide type="bottom" id="pmm-hT-YF8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nff-on-bAo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ny4-Tv-S6t">
+                                <rect key="frame" x="115" y="102" width="144.5" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter New Joke #1">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8t-y4-Rff">
+                                <rect key="frame" x="16" y="162" width="46" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Line 1">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-kH-qe8">
+                                <rect key="frame" x="16" y="193.5" width="46" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Line 2">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeY-jR-tBj">
+                                <rect key="frame" x="16" y="225" width="46" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Line 3">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nR7-OF-gAZ">
+                                <rect key="frame" x="16" y="256.5" width="56" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Answer">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g61-EL-7nQ">
+                                <rect key="frame" x="82" y="158" width="267" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCR-KN-Q0o">
+                                <rect key="frame" x="82" y="190" width="267" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYP-iR-0eE">
+                                <rect key="frame" x="82" y="222" width="267" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAi-XG-43A">
+                                <rect key="frame" x="92" y="253" width="257" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YeY-jR-tBj" firstAttribute="top" secondItem="WdC-kH-qe8" secondAttribute="bottom" constant="8" id="3jt-Rb-TW4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SYP-iR-0eE" secondAttribute="trailing" constant="10" id="B5r-Nx-EoZ"/>
+                            <constraint firstItem="WdC-kH-qe8" firstAttribute="top" secondItem="L8t-y4-Rff" secondAttribute="bottom" constant="8" id="GfU-SX-LVS"/>
+                            <constraint firstItem="g61-EL-7nQ" firstAttribute="top" secondItem="Ny4-Tv-S6t" secondAttribute="bottom" constant="32.5" id="H9G-UM-Sa6"/>
+                            <constraint firstItem="L8t-y4-Rff" firstAttribute="top" secondItem="Ny4-Tv-S6t" secondAttribute="bottom" constant="36.5" id="M8P-vd-qMy"/>
+                            <constraint firstItem="WdC-kH-qe8" firstAttribute="leading" secondItem="nff-on-bAo" secondAttribute="leadingMargin" id="MU2-9N-tkb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TCR-KN-Q0o" secondAttribute="trailing" constant="10" id="N8T-lF-7wp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g61-EL-7nQ" secondAttribute="trailing" constant="10" id="NOr-if-dnf"/>
+                            <constraint firstItem="TCR-KN-Q0o" firstAttribute="leading" secondItem="WdC-kH-qe8" secondAttribute="trailing" constant="20" id="R6A-76-yiW"/>
+                            <constraint firstItem="Ny4-Tv-S6t" firstAttribute="top" secondItem="Tib-md-OMD" secondAttribute="bottom" constant="8" id="Waj-Qv-hBs"/>
+                            <constraint firstItem="YeY-jR-tBj" firstAttribute="leading" secondItem="nff-on-bAo" secondAttribute="leadingMargin" id="ZKD-Xi-1V2"/>
+                            <constraint firstItem="L8t-y4-Rff" firstAttribute="leading" secondItem="nff-on-bAo" secondAttribute="leadingMargin" id="bQx-Jf-jvV"/>
+                            <constraint firstItem="g61-EL-7nQ" firstAttribute="leading" secondItem="L8t-y4-Rff" secondAttribute="trailing" constant="20" id="fJB-IH-kGQ"/>
+                            <constraint firstItem="nR7-OF-gAZ" firstAttribute="top" secondItem="YeY-jR-tBj" secondAttribute="bottom" constant="8" id="gCz-iG-vuX"/>
+                            <constraint firstItem="Ny4-Tv-S6t" firstAttribute="centerX" secondItem="nff-on-bAo" secondAttribute="centerX" id="k2T-kI-jUD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lAi-XG-43A" secondAttribute="trailing" constant="10" id="lGe-EG-CVv"/>
+                            <constraint firstItem="lAi-XG-43A" firstAttribute="top" secondItem="SYP-iR-0eE" secondAttribute="bottom" constant="1" id="lkv-Pu-MUZ"/>
+                            <constraint firstItem="nR7-OF-gAZ" firstAttribute="leading" secondItem="nff-on-bAo" secondAttribute="leadingMargin" id="nG9-OY-RVZ"/>
+                            <constraint firstItem="SYP-iR-0eE" firstAttribute="leading" secondItem="YeY-jR-tBj" secondAttribute="trailing" constant="20" id="oHB-9F-NKh"/>
+                            <constraint firstItem="TCR-KN-Q0o" firstAttribute="top" secondItem="g61-EL-7nQ" secondAttribute="bottom" constant="2" id="pIJ-5O-E86"/>
+                            <constraint firstItem="lAi-XG-43A" firstAttribute="leading" secondItem="nR7-OF-gAZ" secondAttribute="trailing" constant="20" id="rwf-rX-Lcm"/>
+                            <constraint firstItem="SYP-iR-0eE" firstAttribute="top" secondItem="TCR-KN-Q0o" secondAttribute="bottom" constant="2" id="yiP-sH-0Ii"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Joke" prompt="VelaBorja's Joker" id="Q0R-e2-w64">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xdI-dL-dRa">
+                            <connections>
+                                <action selector="cancelButtonDidTouchUpInside:" destination="5dv-8F-rZR" id="ueB-5l-1A2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="qiW-ki-2iz">
+                            <connections>
+                                <action selector="saveButtonDidTouchUpInside:" destination="5dv-8F-rZR" id="U57-FL-ror"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="AnswerTextField" destination="lAi-XG-43A" id="2ch-rS-GgG"/>
+                        <outlet property="Line1TextField" destination="g61-EL-7nQ" id="ws3-nP-73x"/>
+                        <outlet property="Line2TextField" destination="TCR-KN-Q0o" id="8oG-cg-cON"/>
+                        <outlet property="Line3TextField" destination="SYP-iR-0eE" id="udw-Ze-5NZ"/>
+                        <outlet property="TitleLabel" destination="Ny4-Tv-S6t" id="VLV-0D-mUa"/>
+                        <segue destination="nwP-ru-Ewz" kind="unwind" identifier="unwindFromAddJoke" unwindAction="unwindFromDetailWithSegue:" id="ESS-Yn-5X2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0t-CK-mWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nwP-ru-Ewz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="788"/>
+        </scene>
+        <!--Edit Joke-->
+        <scene sceneID="ETt-sC-nbA">
+            <objects>
+                <viewController id="ZBn-w5-Grb" customClass="ViewEditJokeViewController" customModule="Joker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NYc-h7-ASX"/>
+                        <viewControllerLayoutGuide type="bottom" id="NFy-lg-t7U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ok7-Ji-HGj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNI-TX-Fd2">
+                                <rect key="frame" x="24" y="102" width="327" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Edit desired lines then press Save">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-37-OAe">
+                                <rect key="frame" x="36" y="155.5" width="46" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Line 1">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFC-Bg-vfk">
+                                <rect key="frame" x="36" y="187" width="46" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Line 2">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W01-68-YTl">
+                                <rect key="frame" x="36" y="218" width="46" height="23"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Line 3">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1p-Iz-q7T">
+                                <rect key="frame" x="36" y="249" width="56" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Answer">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jep-Dv-NM2">
+                                <rect key="frame" x="92" y="152" width="267" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9IF-ks-jEe">
+                                <rect key="frame" x="92" y="183" width="267" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hNV-jD-g48">
+                                <rect key="frame" x="92" y="214" width="267" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XCh-hl-ap8">
+                                <rect key="frame" x="102" y="245" width="257" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XCh-hl-ap8" firstAttribute="leading" secondItem="P1p-Iz-q7T" secondAttribute="trailing" constant="10" id="4bV-88-pHM"/>
+                            <constraint firstItem="W01-68-YTl" firstAttribute="leading" secondItem="Ok7-Ji-HGj" secondAttribute="leadingMargin" constant="20" id="5R7-6J-jfn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XCh-hl-ap8" secondAttribute="trailing" id="738-64-kIu"/>
+                            <constraint firstItem="9IF-ks-jEe" firstAttribute="trailing" secondItem="Ok7-Ji-HGj" secondAttribute="trailingMargin" id="7LD-Rk-ZAf"/>
+                            <constraint firstItem="jep-Dv-NM2" firstAttribute="trailing" secondItem="Ok7-Ji-HGj" secondAttribute="trailingMargin" id="8j7-Ye-iTv"/>
+                            <constraint firstItem="P1p-Iz-q7T" firstAttribute="top" secondItem="W01-68-YTl" secondAttribute="bottom" constant="8" id="9Gf-xq-5RU"/>
+                            <constraint firstItem="OFC-Bg-vfk" firstAttribute="leading" secondItem="Ok7-Ji-HGj" secondAttribute="leadingMargin" constant="20" id="A1U-2E-Bhi"/>
+                            <constraint firstItem="hNV-jD-g48" firstAttribute="leading" secondItem="W01-68-YTl" secondAttribute="trailing" constant="10" id="Chv-pc-UBA"/>
+                            <constraint firstItem="9IF-ks-jEe" firstAttribute="leading" secondItem="OFC-Bg-vfk" secondAttribute="trailing" constant="10" id="FYv-nv-mbN"/>
+                            <constraint firstItem="P1p-Iz-q7T" firstAttribute="leading" secondItem="Ok7-Ji-HGj" secondAttribute="leadingMargin" constant="20" id="Mb4-1n-hmL"/>
+                            <constraint firstItem="hNV-jD-g48" firstAttribute="top" secondItem="9IF-ks-jEe" secondAttribute="bottom" constant="1" id="PH4-0W-kRZ"/>
+                            <constraint firstItem="hNV-jD-g48" firstAttribute="trailing" secondItem="Ok7-Ji-HGj" secondAttribute="trailingMargin" id="QQn-iB-L1h"/>
+                            <constraint firstItem="pNI-TX-Fd2" firstAttribute="leading" secondItem="Ok7-Ji-HGj" secondAttribute="leadingMargin" constant="8" id="RXQ-we-lHx"/>
+                            <constraint firstItem="pNI-TX-Fd2" firstAttribute="top" secondItem="NYc-h7-ASX" secondAttribute="bottom" constant="8" id="ZFJ-SK-pYU"/>
+                            <constraint firstItem="M0i-37-OAe" firstAttribute="top" secondItem="pNI-TX-Fd2" secondAttribute="bottom" constant="30" id="agR-sJ-3kP"/>
+                            <constraint firstItem="XCh-hl-ap8" firstAttribute="top" secondItem="hNV-jD-g48" secondAttribute="bottom" constant="1" id="fnt-Nm-YU1"/>
+                            <constraint firstItem="W01-68-YTl" firstAttribute="top" secondItem="OFC-Bg-vfk" secondAttribute="bottom" constant="8" id="mh7-NA-52W"/>
+                            <constraint firstItem="OFC-Bg-vfk" firstAttribute="top" secondItem="M0i-37-OAe" secondAttribute="bottom" constant="8" id="n9r-ox-o60"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pNI-TX-Fd2" secondAttribute="trailing" constant="8" id="ocQ-wy-9bq"/>
+                            <constraint firstItem="jep-Dv-NM2" firstAttribute="top" secondItem="pNI-TX-Fd2" secondAttribute="bottom" constant="26.5" id="ocV-P0-2w3"/>
+                            <constraint firstItem="M0i-37-OAe" firstAttribute="leading" secondItem="Ok7-Ji-HGj" secondAttribute="leadingMargin" constant="20" id="pnE-V4-LQz"/>
+                            <constraint firstItem="jep-Dv-NM2" firstAttribute="leading" secondItem="M0i-37-OAe" secondAttribute="trailing" constant="10" id="v68-LD-nId"/>
+                            <constraint firstItem="9IF-ks-jEe" firstAttribute="top" secondItem="jep-Dv-NM2" secondAttribute="bottom" constant="1" id="zEC-kn-uma"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Joke" prompt="VelaBorja's Joker" id="S9l-1r-jdA">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="V7D-gQ-ip7">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="ZBn-w5-Grb" id="wbg-cz-cKM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="riu-Qa-MtR">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="ZBn-w5-Grb" id="mu0-uM-nEU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answer" destination="XCh-hl-ap8" id="zvk-be-33g"/>
+                        <outlet property="line1" destination="jep-Dv-NM2" id="sZz-bu-vlM"/>
+                        <outlet property="line2" destination="9IF-ks-jEe" id="KIR-Hh-HKM"/>
+                        <outlet property="line3" destination="hNV-jD-g48" id="eMU-Nn-Cxh"/>
+                        <segue destination="io6-p3-O2e" kind="unwind" identifier="unwindFromEditJoke" unwindAction="unwindFromDetailWithSegue:" id="BfG-N6-5KW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAk-WS-whp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="io6-p3-O2e" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1805.5999999999999" y="1427.136431784108"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3tM-F3-XNL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lwU-LQ-gdi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EAV-qC-7xJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dj6-LA-in1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiI-72-Aar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
