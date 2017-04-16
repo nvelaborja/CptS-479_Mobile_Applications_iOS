@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Bounce" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
@@ -18,9 +23,88 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="cGr-UH-fOR" kind="show" identifier="showSettingsSegue" id="ZjL-kB-m73"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Rmj-6e-H41">
+            <objects>
+                <viewController id="cGr-UH-fOR" customClass="SettingsViewController" customModule="Bounce" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p1y-Da-l1Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="rwH-LK-yRd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zeg-1H-eOb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7m-ec-1Ps">
+                                <rect key="frame" x="155.5" y="28" width="63.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound Effects" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvn-Dt-EbC">
+                                <rect key="frame" x="16" y="91" width="107.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPY-C5-3GC">
+                                <rect key="frame" x="16" y="138" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qdm-TJ-cmD">
+                                <rect key="frame" x="310" y="86" width="51" height="31"/>
+                                <connections>
+                                    <action selector="sfxValueChanged:" destination="cGr-UH-fOR" eventType="valueChanged" id="xbP-Jh-dIt"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPg-Oe-Njh">
+                                <rect key="frame" x="310" y="133" width="51" height="31"/>
+                                <connections>
+                                    <action selector="musicValueChanged:" destination="cGr-UH-fOR" eventType="valueChanged" id="ijZ-RL-AgJ"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBM-v8-zyW">
+                                <rect key="frame" x="168.5" y="200" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="done:" destination="cGr-UH-fOR" eventType="touchUpInside" id="pud-nc-Mxz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.59514126712328763" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TBM-v8-zyW" firstAttribute="centerX" secondItem="Zeg-1H-eOb" secondAttribute="centerX" id="0mq-H2-mPO"/>
+                            <constraint firstItem="qdm-TJ-cmD" firstAttribute="top" secondItem="p1y-Da-l1Y" secondAttribute="bottom" constant="66" id="6Q7-FR-Ukr"/>
+                            <constraint firstItem="dvn-Dt-EbC" firstAttribute="leading" secondItem="Zeg-1H-eOb" secondAttribute="leadingMargin" id="OYz-Ho-TAp"/>
+                            <constraint firstItem="t7m-ec-1Ps" firstAttribute="centerX" secondItem="Zeg-1H-eOb" secondAttribute="centerX" id="Z2P-ug-tAr"/>
+                            <constraint firstItem="kPY-C5-3GC" firstAttribute="top" secondItem="dvn-Dt-EbC" secondAttribute="bottom" constant="26" id="enQ-xz-DCE"/>
+                            <constraint firstItem="dvn-Dt-EbC" firstAttribute="top" secondItem="p1y-Da-l1Y" secondAttribute="bottom" constant="71" id="gXC-hy-KgL"/>
+                            <constraint firstItem="JPg-Oe-Njh" firstAttribute="top" secondItem="qdm-TJ-cmD" secondAttribute="bottom" constant="16" id="hL0-99-enz"/>
+                            <constraint firstItem="kPY-C5-3GC" firstAttribute="leading" secondItem="Zeg-1H-eOb" secondAttribute="leadingMargin" id="lea-MF-Zaa"/>
+                            <constraint firstItem="t7m-ec-1Ps" firstAttribute="top" secondItem="p1y-Da-l1Y" secondAttribute="bottom" constant="8" id="oG5-gz-ulh"/>
+                            <constraint firstItem="TBM-v8-zyW" firstAttribute="top" secondItem="t7m-ec-1Ps" secondAttribute="bottom" constant="151" id="olq-hz-Pjx"/>
+                            <constraint firstItem="qdm-TJ-cmD" firstAttribute="trailing" secondItem="Zeg-1H-eOb" secondAttribute="trailingMargin" id="ui4-WE-fEk"/>
+                            <constraint firstItem="JPg-Oe-Njh" firstAttribute="trailing" secondItem="Zeg-1H-eOb" secondAttribute="trailingMargin" id="yb5-Kr-jse"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rnf-CQ-jiP"/>
+                    <connections>
+                        <outlet property="musicSwitch" destination="JPg-Oe-Njh" id="CY8-SV-wOq"/>
+                        <outlet property="sfxSwitch" destination="qdm-TJ-cmD" id="vsB-EN-h9N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Pc-kp-RvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="37"/>
         </scene>
     </scenes>
 </document>

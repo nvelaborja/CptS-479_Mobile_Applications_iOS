@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8A4DFEE1EA2B8BE00102E4A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8A4DFED1EA2B8BE00102E4A /* GameScene.sks */; };
+		D8A4DFF91EA2C10A00102E4A /* bounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8A4DFF61EA2C10A00102E4A /* bounce.mp3 */; };
+		D8A4DFFA1EA2C10A00102E4A /* glassbreak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8A4DFF71EA2C10A00102E4A /* glassbreak.mp3 */; };
+		D8A4DFFB1EA2C10A00102E4A /* WSU-Fight-Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8A4DFF81EA2C10A00102E4A /* WSU-Fight-Song.mp3 */; };
+		D8A4DFFD1EA2D14200102E4A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4DFFC1EA2D14200102E4A /* SettingsViewController.swift */; };
 		D8DA6B2C1E9B333A00F52187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DA6B2B1E9B333A00F52187 /* AppDelegate.swift */; };
 		D8DA6B301E9B333A00F52187 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8DA6B2F1E9B333A00F52187 /* Actions.sks */; };
 		D8DA6B321E9B333A00F52187 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DA6B311E9B333A00F52187 /* GameScene.swift */; };
@@ -14,10 +19,14 @@
 		D8DA6B371E9B333A00F52187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DA6B351E9B333A00F52187 /* Main.storyboard */; };
 		D8DA6B391E9B333A00F52187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DA6B381E9B333A00F52187 /* Assets.xcassets */; };
 		D8DA6B3C1E9B333A00F52187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DA6B3A1E9B333A00F52187 /* LaunchScreen.storyboard */; };
-		D8DA6B441E9C185500F52187 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8DA6B431E9C185500F52187 /* GameScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8A4DFED1EA2B8BE00102E4A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D8A4DFF61EA2C10A00102E4A /* bounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bounce.mp3; sourceTree = "<group>"; };
+		D8A4DFF71EA2C10A00102E4A /* glassbreak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = glassbreak.mp3; sourceTree = "<group>"; };
+		D8A4DFF81EA2C10A00102E4A /* WSU-Fight-Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "WSU-Fight-Song.mp3"; sourceTree = "<group>"; };
+		D8A4DFFC1EA2D14200102E4A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D8DA6B281E9B333A00F52187 /* Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DA6B2B1E9B333A00F52187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8DA6B2F1E9B333A00F52187 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -27,7 +36,6 @@
 		D8DA6B381E9B333A00F52187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8DA6B3B1E9B333A00F52187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8DA6B3D1E9B333A00F52187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8DA6B431E9C185500F52187 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = ../../../../../../../../Downloads/BounceSpriteKit2/BounceSpriteKit2/GameScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8A4DFEF1EA2C0A800102E4A /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4DFF61EA2C10A00102E4A /* bounce.mp3 */,
+				D8A4DFF71EA2C10A00102E4A /* glassbreak.mp3 */,
+				D8A4DFF81EA2C10A00102E4A /* WSU-Fight-Song.mp3 */,
+			);
+			name = "Sound Files";
+			sourceTree = "<group>";
+		};
 		D8DA6B1F1E9B333A00F52187 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +78,8 @@
 		D8DA6B2A1E9B333A00F52187 /* Bounce */ = {
 			isa = PBXGroup;
 			children = (
-				D8DA6B431E9C185500F52187 /* GameScene.sks */,
+				D8A4DFEF1EA2C0A800102E4A /* Sound Files */,
+				D8A4DFED1EA2B8BE00102E4A /* GameScene.sks */,
 				D8DA6B2B1E9B333A00F52187 /* AppDelegate.swift */,
 				D8DA6B2F1E9B333A00F52187 /* Actions.sks */,
 				D8DA6B311E9B333A00F52187 /* GameScene.swift */,
@@ -69,6 +88,7 @@
 				D8DA6B381E9B333A00F52187 /* Assets.xcassets */,
 				D8DA6B3A1E9B333A00F52187 /* LaunchScreen.storyboard */,
 				D8DA6B3D1E9B333A00F52187 /* Info.plist */,
+				D8A4DFFC1EA2D14200102E4A /* SettingsViewController.swift */,
 			);
 			path = Bounce;
 			sourceTree = "<group>";
@@ -133,8 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A4DFF91EA2C10A00102E4A /* bounce.mp3 in Resources */,
+				D8A4DFFA1EA2C10A00102E4A /* glassbreak.mp3 in Resources */,
+				D8A4DFFB1EA2C10A00102E4A /* WSU-Fight-Song.mp3 in Resources */,
 				D8DA6B371E9B333A00F52187 /* Main.storyboard in Resources */,
-				D8DA6B441E9C185500F52187 /* GameScene.sks in Resources */,
+				D8A4DFEE1EA2B8BE00102E4A /* GameScene.sks in Resources */,
 				D8DA6B391E9B333A00F52187 /* Assets.xcassets in Resources */,
 				D8DA6B3C1E9B333A00F52187 /* LaunchScreen.storyboard in Resources */,
 				D8DA6B301E9B333A00F52187 /* Actions.sks in Resources */,
@@ -151,6 +174,7 @@
 				D8DA6B321E9B333A00F52187 /* GameScene.swift in Sources */,
 				D8DA6B341E9B333A00F52187 /* GameViewController.swift in Sources */,
 				D8DA6B2C1E9B333A00F52187 /* AppDelegate.swift in Sources */,
+				D8A4DFFD1EA2D14200102E4A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

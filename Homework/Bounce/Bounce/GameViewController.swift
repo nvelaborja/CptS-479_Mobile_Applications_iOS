@@ -11,6 +11,8 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
+    
+    var currentScene: GameScene!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,15 +20,17 @@ class GameViewController: UIViewController {
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
+
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
                 // Present the scene
                 view.presentScene(scene)
+                (scene as! GameScene).vc = self
+                currentScene = scene as! GameScene
             }
             
             view.ignoresSiblingOrder = true
-            
             view.showsFPS = true
             view.showsNodeCount = true
         }
@@ -51,5 +55,12 @@ class GameViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let settingsVC = segue.destination as! SettingsViewController
+        settingsVC.sfxOn = UserDefaults.standard.bool(forKey: "sfx")
+        settingsVC.musicOn = UserDefaults.standard.bool(forKey: "music")
+        settingsVC.vc = self
     }
 }
